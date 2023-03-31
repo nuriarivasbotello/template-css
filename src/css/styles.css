@@ -25,34 +25,3 @@ body {
   margin: 0;
   background-color: #111;
 }
-.container {
-  width: 100%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  background-color: lightpink;
-}
-/* Esto siempre en este orden, si va por encima del container, podría dar errror */
-@media screen and (min-width: 768px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    background-color: red;
-  }
-  /* No hace falta repetir la misma propiedad ya que dentro, se sobreescribirá lo que se cambie */
-}
-.box {
-  width: 100px;
-  height: 200px;
-  background-color: aqua;
-}
-@media screen and (min-width: 768px) {
-  .box {
-    width: 500px;
-    background-color: rgb(221, 0, 255);
-  }
-}
-.box:hover {
-  background: lightseagreen;
-}
